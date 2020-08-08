@@ -1,0 +1,8 @@
+/** FLIP BOX CSS */
+:root {
+  --flipbox-Title-Color: #101010;
+}
+
+.flipBoxContainer {
+  color: var(--flipbox-Title-Color);
+}
