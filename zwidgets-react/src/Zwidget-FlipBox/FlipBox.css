@@ -27,8 +27,8 @@ p {
   width: 100%;
   height: 0%;
   top: 0%;
-  opacity: 0;
-  transition: opacity 0.3s, height 0.3s;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .flipBoxBack h1,
@@ -38,18 +38,30 @@ p {
   padding: 20px;
 }
 
+.flipBoxBack button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: var(--flipbox-Back-Bg-Color);
+  color: white;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.flipBoxBack button:hover {
+  color: var(--flipbox-Back-Bg-Color);
+  background-color: white;
+}
+
 .flipBoxContainer-col-1:hover .flipBoxBack {
-  opacity: 1;
   height: 100%;
 }
 
 .flipBoxContainer-col-2:hover .flipBoxBack {
-  opacity: 1;
   height: 100%;
 }
 
 .flipBoxContainer-col-3:hover .flipBoxBack {
-  opacity: 1;
   height: 100%;
 }
 
@@ -64,7 +76,7 @@ p {
 }
 
 /** FlipBoxes meant to be used with multiple columns need
- a display: flex wrapper.*/
+ a 'display: flex' wrapper.*/
 
 .flipBoxContainer-col-2 {
   background-color: lightgray;

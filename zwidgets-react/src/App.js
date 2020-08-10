@@ -1,9 +1,35 @@
 import React from "react";
-import FlipBoxItem from "./FlipBox/FlipBoxItem";
+import FlipBoxItem from "./Zwidget-FlipBox/FlipBoxItem";
+import StickyHeader from "./Zwidget-Header/StickyHeader";
 
 function App() {
   return (
     <div className="App">
+      <StickyHeader
+        backgroundColor="blue"
+        nonStickyHeight={70}
+        stickyHeight={50}
+        switchValue={80}
+        containerWidth="80%"
+        menuItemsColor="yellow"
+        menuSpacing="20px"
+        menuItems={[
+          {
+            title: "Contact",
+            link: "https://www.youtube.com",
+          },
+          {
+            title: "About",
+            link: "https://www.youtube.com",
+          },
+          {
+            title: "Home",
+            link: "https://www.youtube.com",
+            selected: true,
+          },
+        ]}
+        imgSource="https://upload.wikimedia.org/wikipedia/commons/7/72/Little_Mix_Logo_2013.png"
+      />
       <div style={{ width: "80%", margin: "0 auto" }}>
         <FlipBoxItem
           frontTitle="potato"
@@ -23,6 +49,7 @@ function App() {
           frontTitleColor="#ff0000"
           frontParagraphColor="#00ffff"
           frontImage="https://lh3.googleusercontent.com/proxy/U3589xn2SgvUUO4KomaKI8xFd6xccKMaokQEs1PKZ-5RQi96ZF9k_TT7RbDzstQo3I5LE19OcO25lq1onK-f7QrUJbanNVXYWBBJiBaat6S6AyI5VF6ncQ8o-k_KEJk"
+          backTitle="Hello"
         />
         <div style={{ display: "flex" }}>
           <FlipBoxItem
@@ -74,6 +101,8 @@ function App() {
             backTitleColor="#fff"
             backParagraphColor="#fff"
             side="right"
+            buttonText="Hello"
+            buttonLink="https://www.zacharywilliams.io"
           />
         </div>
       </div>

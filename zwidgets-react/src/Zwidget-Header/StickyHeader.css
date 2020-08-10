@@ -1,0 +1,54 @@
+/** STICKY HEADER CSS */
+:root {
+  --non-Sticky-Header-Height: 70px;
+  --sticky-Header-Height: 50px;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.stickyHeader {
+  height: var(--sticky-Header-Height);
+  animation: slideIn 0.3s;
+}
+
+.stickyHeader p {
+  margin: 0;
+  padding: 0;
+}
+
+.nonStickyHeaderHeight {
+  height: var(--non-Sticky-Header-Height);
+}
+
+.nonStickyHeader {
+  height: var(--non-Sticky-Header-Height);
+}
+
+.menuItems {
+  margin-left: auto;
+}
+
+.menuItems a {
+  text-decoration: none;
+}
+
+.unselectedMenuItem {
+  color: red;
+}
+
+.selectedMenuItem {
+  color: yellow;
+}
+
+@keyframes slideIn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: var(--sticky-Header-Height);
+  }
+}
+/** END OF FLIP BOX CSS */
