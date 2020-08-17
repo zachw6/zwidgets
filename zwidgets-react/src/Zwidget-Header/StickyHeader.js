@@ -14,7 +14,6 @@ export default function StickyHeader(props) {
       setStickyActivated(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener("scroll", scrollListener);
     // eslint-disable-next-line
@@ -53,6 +52,7 @@ export default function StickyHeader(props) {
           >
             <div className="headerLogo">
               <img
+                alt="Header"
                 style={{ height: props.stickyHeight - stickyHeightShrink }}
                 src={props.imgSource}
               />
@@ -61,6 +61,7 @@ export default function StickyHeader(props) {
               {props.menuItems.map((item) => {
                 return (
                   <a
+                    key={item.title}
                     className={
                       item.selected ? "selectedMenuItem" : "unselectedMenuItem"
                     }
@@ -96,12 +97,17 @@ export default function StickyHeader(props) {
           }}
         >
           <div className="headerLogo">
-            <img style={{ height: props.stickyHeight }} src={props.imgSource} />
+            <img
+              alt="Header"
+              style={{ height: props.stickyHeight }}
+              src={props.imgSource}
+            />
           </div>
           <div className="menuItems">
             {props.menuItems.map((item) => {
               return (
                 <a
+                  key={item.title}
                   className={
                     item.selected ? "selectedMenuItem" : "unselectedMenuItem"
                   }

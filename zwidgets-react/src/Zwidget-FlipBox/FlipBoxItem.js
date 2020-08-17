@@ -29,8 +29,6 @@ export default function FlipBoxItem(props) {
   var containerStyle = "";
   var frontImageDisplay = props.frontImage ? "inline" : "none";
   var backButtonDisplay = props.buttonText ? "inline" : "none";
-  var colMarginLeft = "";
-  var colMarginRight = "";
 
   switch (props.colNum) {
     default:
@@ -41,32 +39,14 @@ export default function FlipBoxItem(props) {
       break;
     case 2:
       containerStyle = "flipBoxContainer-col-2";
-      props.side === "left"
-        ? (colMarginRight = "5px")
-        : (colMarginLeft = "5px");
       break;
     case 3:
       containerStyle = "flipBoxContainer-col-3";
-      switch (props.side) {
-        default:
-          break;
-        case "left":
-          colMarginRight = "10px";
-          break;
-        case "right":
-          colMarginLeft = "10px";
-          break;
-        case "middle":
-          break;
-      }
       break;
   }
 
   return (
-    <div
-      className={containerStyle}
-      style={{ marginLeft: colMarginLeft, marginRight: colMarginRight }}
-    >
+    <div className={containerStyle}>
       <div
         className="flipBoxFront"
         style={{ backgroundImage: frontBackgroundImage }}

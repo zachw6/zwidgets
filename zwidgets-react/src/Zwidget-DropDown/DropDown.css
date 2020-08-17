@@ -1,0 +1,13 @@
+/** DROP DOWN CSS */
+.dropDownContainer {
+  width: 100%;
+  height: auto;
+}
+
+.dropDownContent {
+  transition: all 0.3s ease-in-out;
+  display: none;
+  overflow: hidden;
+}
+
+/** END OF DROP DOWN CSS */

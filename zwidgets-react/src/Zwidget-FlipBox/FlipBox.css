@@ -2,6 +2,8 @@
 :root {
   --flipbox-Title-Color: black;
   --flipbox-Back-Bg-Color: #101010;
+  --flipbox-Col-2-Container-Transition-Width: 750px;
+  --flipbox-Col-3-Container-Transition-Width: 900px;
 }
 
 .flipBoxFront {
@@ -76,7 +78,20 @@ p {
 }
 
 /** FlipBoxes meant to be used with multiple columns need
- a 'display: flex' wrapper.*/
+to be wrapped in the container elements. */
+
+.col2Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col2Container > * {
+  flex-basis: calc(
+    calc(var(--flipbox-Col-2-Container-Transition-Width) - 100%) * 999
+  );
+  flex-grow: 1;
+}
 
 .flipBoxContainer-col-2 {
   background-color: lightgray;
@@ -85,6 +100,19 @@ p {
   margin-bottom: 10px;
   text-align: center;
   overflow: hidden;
+}
+
+.col3Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col3Container > * {
+  flex-basis: calc(
+    calc(var(--flipbox-Col-3-Container-Transition-Width) - 100%) * 999
+  );
+  flex-grow: 1;
 }
 
 .flipBoxContainer-col-3 {

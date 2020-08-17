@@ -36,11 +36,11 @@ header {
 }
 
 .unselectedMenuItem {
-  color: red;
+  color: #101010;
 }
 
 .selectedMenuItem {
-  color: yellow;
+  color: #999999;
 }
 
 @keyframes slideIn {
