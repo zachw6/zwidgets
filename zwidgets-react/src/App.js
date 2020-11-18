@@ -16,17 +16,17 @@ function App() {
         menuSpacing="20px"
         menuItems={[
           {
-            title: "Home",
-            link: "https://www.youtube.com",
+            title: "Header Option 1",
+            link: "https://www.zacharywilliams.io",
             selected: true,
           },
           {
-            title: "About",
-            link: "https://www.youtube.com",
+            title: "Header Option 2",
+            link: "https://www.zacharywilliams.io",
           },
           {
-            title: "Contact",
-            link: "https://www.youtube.com",
+            title: "Header Option 3",
+            link: "https://www.zacharywilliams.io",
           },
         ]}
         imgSource="https://upload.wikimedia.org/wikipedia/commons/7/72/Little_Mix_Logo_2013.png"
@@ -35,14 +35,14 @@ function App() {
         <div style={{ marginBottom: 30 }}>
           <DropDown
             num={1}
-            title="Dropdown :)"
+            title="Dropdown Menu Title #1"
             titlePadding="10px 0px 10px 30px"
             titleSize="24px"
             paddingTop={20}
             paddingBottom={20}
             marginLeft={20}
             marginRight={20}
-            content="Hello my name is Zach and I like potatoes."
+            content="This is the content of this dropdown menu. It can extend as many lines as it need and the padding will be even no matter the height."
             headerBackgroundColor="#101010"
             headerFontColor="#f0f0f0"
             contentBackgroundColor="#f0f0f0"
@@ -53,21 +53,14 @@ function App() {
         <div style={{ marginBottom: 30 }}>
           <DropDown
             num={2}
-            title="Dropdownddddddddddddddddddd
-            dddd
-            d
-            dddddddddddd
-            dddddd
-            ddddddddddddd
-            dddddd
-            ddddddd fsafafssa dsffafa adadwsad :)"
+            title="Dropdown Menu Title #2"
             titlePadding="10px 0px 10px 30px"
             titleSize="24px"
             paddingTop={20}
             paddingBottom={20}
             marginLeft={20}
             marginRight={20}
-            content="Hello my name is Zach and I like potatoes."
+            content="This is the content of this dropdown menu. It can extend as many lines as it need and the padding will be even no matter the height."
             headerBackgroundColor="#101010"
             headerFontColor="#f0f0f0"
             contentBackgroundColor="#f0f0f0"
@@ -78,14 +71,14 @@ function App() {
         <div style={{ marginBottom: 30 }}>
           <DropDown
             num={3}
-            title="Dropdown :)"
+            title="Dropdown Menu Title #2"
             titlePadding="10px 0px 10px 30px"
             titleSize="24px"
             paddingTop={20}
             paddingBottom={20}
             marginLeft={20}
             marginRight={20}
-            content="Hello my name is Zach and I like potatoes."
+            content="This is the content of this dropdown menu. It can extend as many lines as it need and the padding will be even no matter the height."
             headerBackgroundColor="#101010"
             headerFontColor="#f0f0f0"
             contentBackgroundColor="#f0f0f0"
@@ -94,11 +87,11 @@ function App() {
           />
         </div>
         <FlipBoxItem
-          frontTitle="potato"
+          frontTitle="FlipBox #1"
           colNum={1}
           frontText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in interdum odio. Donec et nisl felis. Aliquam ultrices semper lacus sit amet commodo. Quisque dui turpis, elementum vel nulla id, aliquam congue lacus. Phasellus semper mauris odio, in feugiat nibh molestie in. Mauris pellentesque diam dui, non consectetur neque blandit non. Suspendisse commodo egestas ornare. Nulla ut purus magna. Praesent porta nisi purus, molestie maximus justo semper quis. Etiam in elit bibendum ante porttitor tincidunt in a erat. Proin dignissim justo a ante luctus luctus. Aenean porta posuere lectus, sit amet pulvinar turpis dictum et. Integer a eros eros. "
-          backTitle="I really love potatoes. Just thought you should know!"
-          backText="Here is the back text."
+          backTitle="Here is a title that is displayed!"
+          backText="Here is the back text of the flipbox. Everything should be working properly."
           backBackgroundImage="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
         />
         <FlipBoxItem
@@ -111,23 +104,23 @@ function App() {
           frontTitleColor="#ff0000"
           frontParagraphColor="#00ffff"
           frontImage="https://lh3.googleusercontent.com/proxy/U3589xn2SgvUUO4KomaKI8xFd6xccKMaokQEs1PKZ-5RQi96ZF9k_TT7RbDzstQo3I5LE19OcO25lq1onK-f7QrUJbanNVXYWBBJiBaat6S6AyI5VF6ncQ8o-k_KEJk"
-          backTitle="Hello"
+          backTitle="Here is a title that is displayed!"
         />
         <div className="col2Container">
           <FlipBoxItem
-            frontTitle="potato"
+            frontTitle="Colsize 2 Flipbox"
             colNum={2}
             frontText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in interdum odio. Donec et nisl felis. Aliquam ultrices semper lacus sit amet commodo. Quisque dui turpis, elementum vel nulla id, aliquam congue lacus. Phasellus semper mauris odio, in feugiat nibh molestie in. Mauris pellentesque diam dui, non consectetur neque blandit non. Suspendisse commodo egestas ornare. Nulla ut purus magna. Praesent porta nisi purus, molestie maximus justo semper quis. Etiam in elit bibendum ante porttitor tincidunt in a erat. Proin dignissim justo a ante luctus luctus. Aenean porta posuere lectus, sit amet pulvinar turpis dictum et. Integer a eros eros. "
-            backTitle="I really love potatoes. Just thought you should know!"
+            backTitle="Colsize 2 Flipbox Back Title"
             backText="Here is the back text."
             backTitleColor="#fff"
             backParagraphColor="#fff"
           />{" "}
           <FlipBoxItem
-            frontTitle="potato"
+            frontTitle="Colsize 2 Flipbox"
             colNum={2}
             frontText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in interdum odio. Donec et nisl felis. Aliquam ultrices semper lacus sit amet commodo. Quisque dui turpis, elementum vel nulla id, aliquam congue lacus. Phasellus semper mauris odio, in feugiat nibh molestie in. Mauris pellentesque diam dui, non consectetur neque blandit non. Suspendisse commodo egestas ornare. Nulla ut purus magna. Praesent porta nisi purus, molestie maximus justo semper quis. Etiam in elit bibendum ante porttitor tincidunt in a erat. Proin dignissim justo a ante luctus luctus. Aenean porta posuere lectus, sit amet pulvinar turpis dictum et. Integer a eros eros. "
-            backTitle="I really love potatoes. Just thought you should know!"
+            backTitle="Colsize 2 Flipbox Back Title"
             backText="Here is the back text."
             backTitleColor="#fff"
             backParagraphColor="#fff"
@@ -135,32 +128,32 @@ function App() {
         </div>
         <div className="col3Container">
           <FlipBoxItem
-            frontTitle="potato"
+            frontTitle="Colsize 3 Flipbox"
             colNum={3}
             frontText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in interdum odio. Donec et nisl felis. Aliquam ultrices semper lacus sit amet commodo. Quisque dui turpis, elementum vel nulla id, aliquam congue lacus. Phasellus semper mauris odio, in feugiat nibh molestie in. Mauris pellentesque diam dui, non consectetur neque blandit non. Suspendisse commodo egestas ornare. Nulla ut purus magna. Praesent porta nisi purus, molestie maximus justo semper quis. Etiam in elit bibendum ante porttitor tincidunt in a erat. Proin dignissim justo a ante luctus luctus. Aenean porta posuere lectus, sit amet pulvinar turpis dictum et. Integer a eros eros. "
-            backTitle="I really love potatoes. Just thought you should know!"
+            backTitle="Colsize 3 Flipbox Back Title"
             backText="Here is the back text."
             backTitleColor="#fff"
             backParagraphColor="#fff"
           />
           <FlipBoxItem
-            frontTitle="potato"
+            frontTitle="Colsize 3 Flipbox"
             colNum={3}
             frontText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in interdum odio. Donec et nisl felis. Aliquam ultrices semper lacus sit amet commodo. Quisque dui turpis, elementum vel nulla id, aliquam congue lacus. Phasellus semper mauris odio, in feugiat nibh molestie in. Mauris pellentesque diam dui, non consectetur neque blandit non. Suspendisse commodo egestas ornare. Nulla ut purus magna. Praesent porta nisi purus, molestie maximus justo semper quis. Etiam in elit bibendum ante porttitor tincidunt in a erat. Proin dignissim justo a ante luctus luctus. Aenean porta posuere lectus, sit amet pulvinar turpis dictum et. Integer a eros eros. "
-            backTitle="I really love potatoes. Just thought you should know!"
+            backTitle="Colsize 2 Flipbox Back Title"
             backText="Here is the back text."
             backTitleColor="#fff"
             backParagraphColor="#fff"
           />
           <FlipBoxItem
-            frontTitle="potato"
+            frontTitle="Colsize 3 Flipbox"
             colNum={3}
             frontText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in interdum odio. Donec et nisl felis. Aliquam ultrices semper lacus sit amet commodo. Quisque dui turpis, elementum vel nulla id, aliquam congue lacus. Phasellus semper mauris odio, in feugiat nibh molestie in. Mauris pellentesque diam dui, non consectetur neque blandit non. Suspendisse commodo egestas ornare. Nulla ut purus magna. Praesent porta nisi purus, molestie maximus justo semper quis. Etiam in elit bibendum ante porttitor tincidunt in a erat. Proin dignissim justo a ante luctus luctus. Aenean porta posuere lectus, sit amet pulvinar turpis dictum et. Integer a eros eros. "
-            backTitle="I really love potatoes. Just thought you should know!"
+            backTitle="Colsize 2 Flipbox Back Title"
             backText="Here is the back text."
             backTitleColor="#fff"
             backParagraphColor="#fff"
-            buttonText="Hello"
+            buttonText="Link to Website"
             buttonLink="https://www.zacharywilliams.io"
           />
         </div>
